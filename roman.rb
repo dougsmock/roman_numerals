@@ -3,8 +3,8 @@
 # combos = { "IV" => 4, "IX" => 9, "XL" => 40, "XC" => 90, "CD" => 400, "CM" => 900 }
 
 def romanize(number)
-    letters = %w[XL X IX V IV I]
-    values = [40, 10, 9, 5, 4, 1]
+    letters = %w[XC L XL X IX V IV I]
+    values = [90, 50, 40, 10, 9, 5, 4, 1]
     roman = letters.zip values
     n = number
     numerals = ""
