@@ -75,6 +75,10 @@ class Roman < Minitest::Test
     assert_equal("CD", romanize(400))
   end
 
+  def test_something
+    assert_equal(Integer, arabic("").class)
+  end
+
 
 
 

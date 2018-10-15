@@ -1,10 +1,6 @@
-# letter_values = { "I" => 1, "V" => 5, "X" => 10, "L" => 50, "C" => 100, "D" => 500, "M" => 1000 }
-
-# combos = { "IV" => 4, "IX" => 9, "XL" => 40, "XC" => 90, "CD" => 400, "CM" => 900 }
-
 def romanize(number)
-    letters = %w[M CM D C XC L XL X IX V IV I]
-    values = [1000, 900, 500, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    letters = %w[M CM D CD C XC L XL X IX V IV I]
+    values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
     roman = letters.zip values
     n = number
     numerals = ""
@@ -14,6 +10,13 @@ def romanize(number)
 
     end
     return numerals
+end
+
+def arabic(letters)
+    200
+   
+
+
 end
 
 
