@@ -12,12 +12,13 @@ def romanize(number)
 end
 
 def arabic(romans)
-   letters = %w[I]
-   values = [1]
+   letters = %w[IV I]
+   values = [4, 1]
    arabic_num = letters.zip values
    number = 0
    arabic_num.each do |v|
         number += v[1] * romans.scan(/#{v[0]}/).count
+        romans = romans.sub(/#{v[0]}/, "")
    end
    return number
 end
