@@ -83,6 +83,10 @@ class Roman < Minitest::Test
     assert_equal(1, arabic("I"))
   end
 
+  def test_III_returns_3
+    assert_equal(3, arabic("III"))
+  end
+
 
 
 
