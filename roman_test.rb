@@ -55,6 +55,22 @@ class Roman < Minitest::Test
     assert_equal("CM", romanize(900))
   end
 
+  def test_1000_returns_M
+    assert_equal("M", romanize(1000))
+  end
+
+  def test_1999
+    assert_equal("MCMXCIX", romanize(1999))
+  end
+
+  def test_2018
+    assert_equal("MMXVIII", romanize(2018))
+  end
+
+  def test_666
+    assert_equal("DCLXVI", romanize(666))
+  end
+
 
 
 
