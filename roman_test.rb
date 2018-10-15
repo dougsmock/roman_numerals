@@ -11,4 +11,8 @@ class Roman < Minitest::Test
     assert_equal("I", romanize(1))
   end
 
+  def test_1_returns_I
+    assert_equal("III", romanize(3))
+  end
+
 end

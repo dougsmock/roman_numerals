@@ -2,9 +2,26 @@
 
 # combos = { "IV" => 4, "IX" => 9, "XL" => 40, "XC" => 90, "CD" => 400, "CM" => 900 }
 
-def romanize number
-    "I"
+def romanize(number)
+    letters = %w[I]
+    values = [1]
+    roman = letters.zip values
+    n = number
+    numerals = ""
+    roman.each do |v|
+        numerals += v[0] * (n/v[1])
+
+
+
+
+    end
+    return numerals
 end
+
+
+
+
+
 
 
 #     letters = %w[ M CM D CD C XC L XL X IX V IV I ]
