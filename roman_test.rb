@@ -107,6 +107,26 @@ class Roman < Minitest::Test
     assert_equal(40, arabic("XL"))
   end
 
+  def test_L_returns_50
+    assert_equal(50, arabic("L"))
+  end
+
+  def test_XC_returns_90
+    assert_equal(90, arabic("XC"))
+  end
+
+  def test_C_returns_100
+    assert_equal(100, arabic("C"))
+  end
+
+  def test_CD_returns_400
+    assert_equal(400, arabic("CD"))
+  end
+
+  def test_D_returns_500
+    assert_equal(500, arabic("D"))
+  end
+
 
 
 
