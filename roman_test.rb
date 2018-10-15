@@ -127,6 +127,10 @@ class Roman < Minitest::Test
     assert_equal(500, arabic("D"))
   end
 
+  def test_D_returns_900
+    assert_equal(900, arabic("CM"))
+  end
+
 
 
 
