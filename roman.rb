@@ -2,7 +2,11 @@
 
 # combos = { "IV" => 4, "IX" => 9, "XL" => 40, "XC" => 90, "CD" => 400, "CM" => 900 }
 
-# def romanize number
+def romanize number
+    "I"
+end
+
+
 #     letters = %w[ M CM D CD C XC L XL X IX V IV I ]
 #     values = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
 #     roman = letters.zip values
