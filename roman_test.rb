@@ -27,5 +27,13 @@ class Roman < Minitest::Test
     assert_equal("IX", romanize(9))
   end
 
+  def test_10_returns_X
+    assert_equal("X", romanize(10))
+  end
+
+  def test_10_returns_XL
+    assert_equal("XL", romanize(40))
+  end
+
 
 end
