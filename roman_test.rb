@@ -71,6 +71,10 @@ class Roman < Minitest::Test
     assert_equal("DCLXVI", romanize(666))
   end
 
+  def test_400
+    assert_equal("CD", romanize(400))
+  end
+
 
 
 
